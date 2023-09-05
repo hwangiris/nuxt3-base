@@ -25,6 +25,7 @@ useSchemaOrg([
     defineLocalBusiness({
         name: '{{ 商家名稱 }}',
         image: '{{ 商家圖片 }}', // 可用 og:image (1200x630)
+        telephone: '0900000000',
         address: {
             streetAddress: '{{ 詳細地址 }}',
             addressLocality: '{{ 縣轄市／區／州城市 }}',
@@ -83,7 +84,7 @@ useSchemaOrg([
         name: '{{ 產品名稱 }}',
         description: '{{ 產品介紹 }}',
         image: '{{ 產品圖片 }}', // String, Array
-        sku: '{{  }}',
+        sku: '{{ 商品貨號 }}',
         offers: {
             '@type': 'Offer', // Offer: 有定錨價格商品, AggregateOffer: 一般商品
             url: '{{ 商品連結 }}',
