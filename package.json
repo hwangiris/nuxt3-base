@@ -1,6 +1,9 @@
 {
   "name": "project-frontend-nuxt",
   "private": true,
+  "engines": {
+    "node": ">=16.0.0 <17.0.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -14,6 +17,7 @@
     "nuxt": "^3.6.5"
   },
   "dependencies": {
+    "@gtm-support/vue-gtm": "^2.1.0",
     "@nuxtjs/recaptcha": "^1.1.2",
     "nuxt-schema-org": "^2.2.0"
   }
