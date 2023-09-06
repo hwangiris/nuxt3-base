@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     },
     modules: [
       'nuxt-schema-org',
+      'nuxt-simple-sitemap'
     ],
     schemaOrg: {
       host: process.env.NUXT_PUBLIC_BASE_URL,

@@ -13,6 +13,11 @@
                             Schema
                         </NuxtLink>
                     </li>
+                    <li class="nav-item">
+                        <NuxtLink to="/sitemap" class="nav-link">
+                            Sitemap
+                        </NuxtLink>
+                    </li>
                 </ul>
             </nav>
         </div>
