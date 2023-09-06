@@ -1,6 +1,6 @@
 export const useMetaHead = ({ title = '', description = '', image_url = '', type = 'website' }) => {
-    const config = useRuntimeConfig();
-    const base = config.public.base_url;
+    const config = useRuntimeConfig().public;
+    const base = config.base_url;
     const route = useRoute();
     const path = route.path.substring(1);
 
