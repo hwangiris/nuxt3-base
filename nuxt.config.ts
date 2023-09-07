@@ -10,15 +10,29 @@ export default defineNuxtConfig({
     modules: [
         'nuxt-schema-org',
         'nuxt-simple-robots',
-        'nuxt-simple-sitemap'
+        'nuxt-simple-sitemap',
+        '@nuxtjs/i18n'
     ],
     schemaOrg: {
         host: process.env.NUXT_PUBLIC_BASE_URL,
     },
-    robots: {
-        sitemap: [
-            '/sitemap.xml',
+    i18n: {
+        langDir: 'locales/',
+        locales: [
+            {
+                code: 'zh',
+                name: '中文',
+                iso: 'zh-HK',
+                file: 'zh.ts',
+            },
+            {
+                code: 'en',
+                name: 'English',
+                iso: 'en-US',
+                file: 'en.ts',
+            },
         ],
+        defaultLocale: 'en',
     },
     devtools: { enabled: true }
 });

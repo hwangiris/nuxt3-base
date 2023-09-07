@@ -4,5 +4,8 @@
 </script>
 
 <template>
-    <h1>{{ slug }}</h1>
+    <h1>
+        {{ $t('hello') }}
+        {{ slug }}
+    </h1>
 </template>
