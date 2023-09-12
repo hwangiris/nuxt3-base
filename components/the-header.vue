@@ -12,17 +12,17 @@
             <nav class="d-flex justify-content-center py-3">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <NuxtLink to="/seo" class="nav-link">
+                        <NuxtLink :to="localePath('/seo')" class="nav-link">
                             SEO
                         </NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <NuxtLink to="/schema" class="nav-link">
+                        <NuxtLink :to="localePath('/schema')" class="nav-link">
                             Schema
                         </NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <NuxtLink to="/sitemap" class="nav-link">
+                        <NuxtLink :to="localePath('/sitemap')" class="nav-link">
                             Sitemap
                         </NuxtLink>
                     </li>
