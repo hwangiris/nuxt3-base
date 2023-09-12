@@ -11,10 +11,21 @@ export default defineNuxtConfig({
         'nuxt-schema-org',
         'nuxt-simple-robots',
         'nuxt-simple-sitemap',
+        'nuxt-security',
         '@nuxtjs/i18n'
     ],
     schemaOrg: {
         host: process.env.NUXT_PUBLIC_BASE_URL,
+    },
+    security: {
+        headers: {
+            xXSSProtection: '1', // 告訴服務器如果遇到 http:// 的請求, 麻煩改為 https:// 請求
+            contentSecurityPolicy: false,
+        },
+        // rateLimiter: { // 限制流量
+        //     tokensPerInterval: 99,
+        //     interval: 'hour',
+        // }
     },
     i18n: {
         langDir: 'locales/',
@@ -32,6 +43,8 @@ export default defineNuxtConfig({
                 file: 'en.ts',
             },
         ],
+        strategy: 'prefix_except_default',
+        detectBrowserLanguage: true,
         defaultLocale: 'en',
     },
     devtools: { enabled: true }
